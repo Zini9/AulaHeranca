@@ -1,0 +1,7 @@
+C:\Users\guilh\source\repos\HerancaExemplo\HerancaExemplo\bin\Debug\HerancaExemplo.exe.config
+C:\Users\guilh\source\repos\HerancaExemplo\HerancaExemplo\bin\Debug\HerancaExemplo.exe
+C:\Users\guilh\source\repos\HerancaExemplo\HerancaExemplo\bin\Debug\HerancaExemplo.pdb
+C:\Users\guilh\source\repos\HerancaExemplo\HerancaExemplo\obj\Debug\HerancaExemplo.csproj.AssemblyReference.cache
+C:\Users\guilh\source\repos\HerancaExemplo\HerancaExemplo\obj\Debug\HerancaExemplo.csproj.CoreCompileInputs.cache
+C:\Users\guilh\source\repos\HerancaExemplo\HerancaExemplo\obj\Debug\HerancaExemplo.exe
+C:\Users\guilh\source\repos\HerancaExemplo\HerancaExemplo\obj\Debug\HerancaExemplo.pdb

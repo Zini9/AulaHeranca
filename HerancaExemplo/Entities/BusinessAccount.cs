@@ -20,7 +20,7 @@ namespace HerancaExemplo.Entities
             LoanLimite = loanLimite;
         }
 
-        public void Loan (double amount) 
+        public void Loan (double amount) //Função de emprestimo
         {
             if (amount <= LoanLimite)
             {

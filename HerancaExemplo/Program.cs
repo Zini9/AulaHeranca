@@ -11,33 +11,14 @@ namespace HerancaExemplo
     {
         static void Main(string[] args)
         {
-            Account acc = new Account(1001, "Guilherme", 0.0); //Instanciar objeto do tipo Account
-            BusinessAccount bacc = new BusinessAccount(1002, "Gerso", 0.0, 500.0);//Instaciar objeto do tipo BusinessAccount
+            Account acc1 = new Account(1000, "Alex", 500.0);
+            Account acc2 = new SavingsAccount(1002, "Ana", 500.0, 0.01);
 
-            //UPCASTING (Conversão de superclasse para subclasse) - Account superclasse - SavingsAccount subclasse - BusinessAccount subclasse
+            acc1.Withdraw(10.0);
+            acc2.Withdraw(10.0);
 
-            Account acc1 = bacc;
-            Account acc2 = new BusinessAccount(1003, "Bob", 0, 200.0);
-            Account acc3 = new SavingsAccount(1004, "Ana", 0, 0.01);
-
-            //DONWCASTING (Conversão de subclasse para superclasse)
-
-            BusinessAccount acc4 = (BusinessAccount)acc2; //(BusinessAccount)acc2 - Transforma Account em BusinessAccount
-            acc4.Loan(100.0); //.Loan (100.0) - Empréstimo de 100 reais
-          
-            if (acc3 is BusinessAccount)//is - for
-            {
-                BusinessAccount acc5 = (BusinessAccount)acc3; //OU BusinessAccount acc5 = acc3 as BusinessAccount;
-                acc5.Loan(200.0);
-                Console.WriteLine("Loan!");
-            }
-
-            if (acc3 is SavingsAccount) 
-            {
-                SavingsAccount acc5 = (SavingsAccount)acc3;
-                acc5.UpdateBalance();
-                Console.WriteLine("Update!");
-            }
+            Console.WriteLine(acc1.Balance);
+            Console.WriteLine(acc2.Balance);
         }
     }
 }

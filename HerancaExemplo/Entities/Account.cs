@@ -22,14 +22,14 @@ namespace HerancaExemplo.Entities
             Balance = balance;
         }
 
-        public void Withdraw (double amount) //Quantia (amount) é retirado do saque da conta (balance)
+        public virtual void Withdraw (double amount) //Quantia (amount) é retirado do saque da conta (balance)
         {
-            Balance = amount;
+            Balance -= amount + 5.0;
         }
         
         public void Deposit(double amount) //Pegar saldo e acrescentar a quantia
         { 
-            Balance += amount;
+            Balance = amount;
         }
     }
 }
